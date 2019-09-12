@@ -13,6 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
+                sh 'whoami'
                 sh 'mvn test'
             }
             post {
